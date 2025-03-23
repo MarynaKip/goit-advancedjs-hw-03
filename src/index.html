@@ -11,17 +11,22 @@
     <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
 
     <main>
-      <nav>
-        <ul>
-          <li><a href="./1-gallery.html">Gallery</a></li>
-          <li><a href="./2-form.html">Feedback Form</a></li>
-        </ul>
-      </nav>
+      <form class="search-form" id="search-form" autocomplete="off">
+        <label>
+          Search images...
+          <textarea name="search" rows="8"></textarea>
+        </label>
+        <button type="submit">Search</button>
+      </form>
+      <div class="gallery"></div>
       <section id="dynamic-content"></section>
     </main>
 
     <load src="./partials/footer.html" />
 
     <script type="module" src="./main.js"></script>
+    <script type="module" src="./js/render-functions.js"></script>
+    <script type="module" src="./js/pixabay-api.js"></script>
+
   </body>
 </html>
