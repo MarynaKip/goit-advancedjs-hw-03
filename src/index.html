@@ -11,15 +11,14 @@
     <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
 
     <main>
-      <form class="search-form" id="search-form" autocomplete="off">
-        <label>
-          Search images...
-          <textarea name="search" rows="8"></textarea>
-        </label>
-        <button type="submit">Search</button>
+      <form class="form" id="search-form" autocomplete="off">
+        <div class="search-container">
+          <input type="text" name="search" id="search" placeholder="Search images..." />
+          <button type="submit">Search</button>
+        </div>
       </form>
-      <div class="gallery"></div>
-      <section id="dynamic-content"></section>
+      <span class="loader">Loading...</span>
+      <ul class="gallery"></ul>
     </main>
 
     <load src="./partials/footer.html" />
